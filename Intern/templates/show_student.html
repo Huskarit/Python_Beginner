@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang = "en">
+   <head></head>
+   <body>
+        <h1> Student List </h1>
+      <table>
+         <thead>
+            <tr>
+               <th>Name</th>
+               <th>Gender</th>
+               <th>Age</th>
+               <th>DOB</th>
+               <th>Email</th>
+            </tr>
+         </thead>
+
+         <tbody>
+            {% for student in info_st %}
+               <tr>
+                  <td>{{ student.name }}</td>
+                  <td>{{ student.gender }}</td>
+                  <td>{{ student.age }}</td>
+                  <td>{{ student.DOB }}</td>
+                  <td>{{ student.email }}</td>
+               </tr>
+            {% endfor %}
+         </tbody>
+      </table>
+   </body>
+</html>
